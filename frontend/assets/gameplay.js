@@ -19,8 +19,13 @@ let appProfit = 0
 
 gameObject.strategy = getRandomStrategy()
 
-buttonHigh.addEventListener('click', handleButtonPressed)
-buttonLow.addEventListener('click', handleButtonPressed)
+if (buttonHigh) {
+    buttonHigh.addEventListener('click', handleButtonPressed)
+}
+if (buttonLow) {
+
+    buttonLow.addEventListener('click', handleButtonPressed)
+}
 updateUI()
 
 function handleButtonPressed(event) {
@@ -149,3 +154,5 @@ async function postObject(obj) {
     await fetch('https://game-theory-d7wp.onrender.com/results', options)
     window.location.replace('./results.html')
 }
+
+module.exports = {getRandomStrategy, handleButtonPressed, updateUI,storeMove, formatMove, getMarketMove, postObject}
