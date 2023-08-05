@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/OMG-GT-logo-no-text.svg" type="image/x-icon">
+    <link rel="stylesheet" href="bellCSSreset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./results.js"></script>
+    <!-- <script defer src="./results.js"></script> -->
+    <title>Game Theory Results</title>
+  </head>
+  <body>
+    <header>
+        <a href="../index.html">
+            <img
+                id="logo"
+                src="./images/GT-logo-1.png"
+            />
+        </a>
+    </header>
+    <h1>Results</h1>
+    <main>
+      <section class="results-section">
+          <div class="results-shrunk">
+            <h3 class="game-num"></h3>
+            <div class="date-time-container">
+              <h4 class="completion-title"></h4>
+              <p class="completion-date-time-data"></p>
+            </div>
+
+            <div class="hidden results-expanded">
+              <h3 class="strategy-row"></h3>
+              <div class="player-row">
+                <p class="player-revenue"></p>
+                <p class="player-moves"></p>
+              </div>
+              <div class="ai-row">
+                <p class="ai-revenue"></p>
+                <p class="ai-moves"></p>
+              </div>
+              <button class="deleteResult">Delete Result</button>
+            </div>
+          </div>
+        </section>      
+    </main>
+  </body>
+</html>

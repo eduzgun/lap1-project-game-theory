@@ -1,0 +1,165 @@
+body {
+  /* center everything */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* fill the page */
+  height: 100vh;
+  background-color: #FFF9F0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+
+  display: flex;
+  justify-content: center;
+  /* full width */
+  width: 100vw;
+  background-color: #ffe9c8;
+  margin-bottom: 1em;
+  box-shadow: 0px 1px 7px #554546
+}
+
+#logo {
+  height: 100px;
+}
+
+
+#tutorialSection {
+  /* breathing */
+  margin: 0 2em;
+  /* readability */
+  max-width: 80ch;
+}
+
+h1,
+h2 {
+  /* space  & grouping*/
+  margin: 0.5em 0 0.2em 0;
+  font-size: 2em;
+}
+
+#navSection {
+  margin: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  margin: 1em;
+  padding: 1em;
+  display: inline;
+  min-width: 8em;
+  border-radius: 1em;
+  border-color: #555454;
+  box-shadow: 3px 3px 5px #554546;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#buttonHigh {
+  background-color: #d7eb75ff;
+}
+#buttonHigh:hover {
+  background-color: #d7eb75aa;
+}
+
+#buttonLow {
+  background-color: #c1f8efff;
+}
+
+#buttonLow:hover {
+  background-color: #c1f8efaa;
+}
+
+/* RESULTS SECTION */
+
+.results-section {
+  
+  text-align: left;
+  padding: 1em 2em;
+  border-radius: 2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.results-win {
+  background-color: #78e35b;
+  border: 1px black solid;
+}
+
+.results-win:hover {
+  background-color: #78e35bbb;
+  border: 1px black solid;
+}
+
+.results-loss {
+  background-color: #c54747;
+  border: 1px black solid;
+}
+
+.results-loss:hover {
+  background-color: #b84242bb;
+  border: 1px black solid;
+}
+
+.results-draw {
+  background-color: #bfc0c9;
+  border: 1px black solid;
+}
+
+.results-draw:hover {
+  background-color: #bfc0c9aa;
+  border: 1px black solid;
+}
+
+.game-num{
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+.date-time-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.deleteResult {
+  margin: 1em;
+  padding: 5px;
+  display: inline;
+  min-width: 6em;
+  border-radius: 1em;
+  border-color: #555454;
+  box-shadow: 3px 3px 5px #554546;
+}
+
+.deleteResult:hover {
+  background-color: #fd7b7b;
+}
+
+
+/* Responsive */
+@media only screen and (min-width: 600px) {
+
+  .results-section,
+  .date-time-container
+  {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    
+  }
+  .results-section{
+    min-width: 500px;
+    margin-bottom: 2em;
+  }
+ .game-num{
+  margin-right: 2em;
+ }
+}
